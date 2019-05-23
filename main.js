@@ -20,7 +20,7 @@ function ambassadorData(partnerData){
 function renderAmbassadorData(){
 	document.getElementById('ambassador_data_container').innerHTML = '';
 	for(var i=0; i<imageList.length; i++){
-		document.getElementById('ambassador_data_container').innerHTML += '<div class="col s12 m12 l4 xl4 center-align" style="min-height:256px;"><img src="'+imageList[i]+'" alt="Unable to load image" class="reponsive-img circle" /><b style="margin-left:5px;">'+titleList[i]+'</b><br /><p>'+subtitleList[i]+'</p></div>';
+		document.getElementById('ambassador_data_container').innerHTML += '<div class="col s12 m12 l4 xl4 center-align" style="min-height:256px;"><img src="'+imageList[i]+'" alt="Unable to load image" class="reponsive-img circle" /><br /><b style="margin-left:5px;">'+titleList[i]+'</b><br /><p>'+subtitleList[i]+'</p></div>';
 	}
 }
 
