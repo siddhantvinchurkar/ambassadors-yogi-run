@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "yogi-run"
+  },
+  "targets": {
+    "yogi-run": {
+      "hosting": {
+        "partners-yogi-run": [
+          "yogi-run"
+        ]
+      }
+    }
+  }
+}

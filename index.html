@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!--Basic meta tags-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Set the shortcut icon-->
+    <link rel="shortcut icon" type="image/png" href="images/icons/favicon-32.png">
+
+    <!--Progressive Web App meta tags-->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="Description" content="This web app will show all Yogi Run Ambassadors">
+
+    <!-- Stylesheets (All loaded asynchronously) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="none" onload="if(media!=='screen,projection')media='screen,projection'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!=='screen,projection')media='screen,projection'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" media="none" onload="if(media!=='screen,projection')media='screen,projection'">
+    <link rel="stylesheet" href="main.css" media="none" onload="if(media!=='screen,projection')media='screen,projection'">
+
+    <title>Yogi Run | Ambassadors</title>
+
+</head>
+
+<body>
+
+<main>
+
+    <!-- Fixed (top) Navigation Bar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="https://yogi.run/" class="brand-logo center valign-wrapper" style="font-size:3em; margin-top:20px;"><img src="images/icons/favicon-32.png" alt="Unable to load image" style="min-height:50px; max-height:50px; margin-right:10px;" />Yogi Run | Ambassadors</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" style="padding-top:50px; padding-bottom:50px;">
+    
+    	<div id="ambassador_data_container" class="row"><!-- Ambassador data will be injected here --></div>
+    	
+    </div>
+
+</main>
+
+<!-- jQuery Scripts -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" defer></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" defer></script>
+
+<!-- Materialize Script -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
+<!-- Firebase Scripts -->
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js" defer></script>
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js" defer></script>
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js" defer></script>
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase-storage.js" defer></script>
+
+<!-- Google Analytics Scripts (We'll put this here eventually...)
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-139059069-1" async></script>
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-139059069-1');
+</script>-->
+
+<!-- App Script -->
+<script type="text/javascript" src="main.js" defer></script>
+
+<!-- Google Spreadsheets Script-->
+<script type="text/javascript" src="https://spreadsheets.google.com/feeds/cells/1oSQysp8sYeczMg6O8fncivvarRkwdonl1-goE0Jeh4o/1/public/values?alt=json-in-script&callback=ambassadorData" defer></script>
+
+</body>
+
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">&copy;&emsp;<span id="footer_year">2019</span>&emsp;<a href="https://siddhantvinchurkar.github.io/" target="_blank">Siddhant Vinchurkar</a></div>
+    </div>
+</footer>
+
+</html>

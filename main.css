@@ -1,0 +1,43 @@
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+nav{
+	height:10%;
+	padding-top: 0px;
+	color: #111111;
+	background-color: #FFFFFF;
+}
+
+nav .brand-logo{
+	padding-top: 0px;
+	color: #111111;
+	background-color: #FFFFFF;
+}
+
+.page-footer{
+	padding-top: 0px;
+	color: #111111;
+	background-color: #FFFFFF;
+}
+
+.page-footer .footer-copyright{
+	padding-top: 0px;
+	color: #111111;
+	background-color: #FFFFFF;
+}
+
+body{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+}
+
+img{
+	min-height: 128px;
+	max-height: 128px;
+}
